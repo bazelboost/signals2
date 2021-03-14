@@ -17,6 +17,7 @@ cc_library(
     name = "signals2",
     visibility = ["//visibility:public"],
     includes = ["include"],
+    defines = ["BOOST_ALL_NO_LIB"],
     hdrs = glob(_public_hdrs),
     deps = [
         ":signals2_internal",
@@ -27,5 +28,27 @@ cc_library(
         "@boost//mpl",
         "@boost//parameter",
         "@boost//predef",
+    ],
+)
+
+# These platforms are only for the CI. You must define your own platforms for
+# your project
+platform(
+    name = "ci_windows",
+    constraint_values = [
+        "@com_github_bazelboost_thread//:threadapi_win32",
+        "@platforms//cpu:x86_64",
+        "@platforms//os:windows",
+        "@bazel_tools//tools/cpp:msvc",
+    ],
+)
+
+platform(
+    name = "ci_linux",
+    constraint_values = [
+        "@com_github_bazelboost_thread//:threadapi_pthread",
+        "@platforms//cpu:x86_64",
+        "@platforms//os:linux",
+        "@bazel_tools//tools/cpp:gcc",
     ],
 )

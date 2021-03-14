@@ -1,0 +1,174 @@
+load("@rules_cc//cc:defs.bzl", "cc_test")
+
+cc_test(
+    name = "connection_test",
+    srcs = ["connection_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "dead_slot_test",
+    srcs = ["dead_slot_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//bind",
+        "@boost//smart_ptr",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "deadlock_regression_test",
+    srcs = ["deadlock_regression_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//smart_ptr",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "deconstruct_test",
+    srcs = ["deconstruct_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+        "@boost//smart_ptr",
+    ],
+)
+
+cc_test(
+    name = "deletion_test",
+    srcs = ["deletion_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+    ],
+)
+
+# cc_test(
+#     name = "invocation_benchmark",
+#     srcs = ["invocation_benchmark.cpp"],
+#     deps = [
+#         "//:signals2",
+#         "@boost//bind",
+#         "@boost//thread",
+#     ],
+# )
+
+# cc_test(
+#     name = "mutex_test",
+#     srcs = ["mutex_test.cpp"],
+#     deps = [
+#         "//:signals2",
+#         "@boost//test",
+#         "@boost//bind",
+#         "@boost//thread",
+#     ],
+# )
+
+cc_test(
+    name = "ordering_test",
+    srcs = ["ordering_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "regression_test",
+    srcs = ["regression_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "shared_connection_block_test",
+    srcs = ["shared_connection_block_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//array",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "signal_n_test",
+    srcs = ["signal_n_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//config",
+        "@boost//bind",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "signal_test",
+    srcs = ["signal_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//bind",
+        "@boost//optional",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "signal_type_test",
+    srcs = ["signal_type_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "slot_compile_test",
+    srcs = ["slot_compile_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+    ],
+)
+
+cc_test(
+    name = "threading_models_test",
+    srcs = ["threading_models_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+        "@boost//thread",
+    ],
+)
+
+cc_test(
+    name = "track_test",
+    srcs = ["track_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//core",
+        "@boost//smart_ptr",
+        "@boost//optional",
+        "@boost//test",
+        "@boost//bind",
+    ],
+)
+
+cc_test(
+    name = "trackable_test",
+    srcs = ["trackable_test.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//test",
+        "@boost//bind",
+        "@boost//core",
+        "@boost//smart_ptr",
+    ],
+)

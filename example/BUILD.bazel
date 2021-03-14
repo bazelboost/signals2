@@ -1,0 +1,114 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "custom_combiners",
+    srcs = ["custom_combiners.cpp"],
+    deps = ["//:signals2"],
+)
+
+cc_binary(
+    name = "disconnect_and_block",
+    srcs = ["disconnect_and_block.cpp"],
+    deps = ["//:signals2"],
+)
+
+cc_binary(
+    name = "doc_view_acm_deconstruct",
+    srcs = ["doc_view_acm_deconstruct.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//bind",
+        "@boost//core",
+        "@boost//smart_ptr",
+    ],
+)
+
+cc_binary(
+    name = "doc_view_acm",
+    srcs = ["doc_view_acm.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//bind",
+        "@boost//io",
+        "@boost//smart_ptr",
+    ],
+)
+
+cc_binary(
+    name = "doc_view",
+    srcs = ["doc_view.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//bind",
+    ],
+)
+
+cc_binary(
+    name = "extended_slot",
+    srcs = ["extended_slot.cpp"],
+    deps = ["//:signals2"],
+)
+
+cc_binary(
+    name = "hello_world_multi_slot",
+    srcs = ["hello_world_multi_slot.cpp"],
+    deps = ["//:signals2"],
+)
+
+cc_binary(
+    name = "hello_world_slot",
+    srcs = ["hello_world_slot.cpp"],
+    deps = ["//:signals2"],
+)
+
+cc_binary(
+    name = "ordering_slots",
+    srcs = ["ordering_slots.cpp"],
+    deps = ["//:signals2"],
+)
+
+cc_binary(
+    name = "passing_slots",
+    srcs = ["passing_slots.cpp"],
+    deps = ["//:signals2"],
+)
+
+cc_binary(
+    name = "postconstructor_ex1",
+    srcs = ["postconstructor_ex1.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//smart_ptr",
+    ],
+)
+
+cc_binary(
+    name = "postconstructor_ex2",
+    srcs = ["postconstructor_ex2.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//smart_ptr",
+    ],
+)
+
+cc_binary(
+    name = "predestructor_example",
+    srcs = ["predestructor_example.cpp"],
+    deps = [
+        "//:signals2",
+        "@boost//smart_ptr",
+    ],
+)
+
+cc_binary(
+    name = "signal_return_value",
+    srcs = ["signal_return_value.cpp"],
+    deps = ["//:signals2"],
+)
+
+cc_binary(
+    name = "slot_arguments",
+    srcs = ["slot_arguments.cpp"],
+    deps = ["//:signals2"],
+)
+
