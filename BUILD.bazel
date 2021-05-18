@@ -9,7 +9,7 @@ cc_library(
     name = "signals2_internal",
     hdrs = glob(["include/boost/**/*.hpp"], exclude = _public_hdrs),
     deps = [
-        "@boost//iterator",
+        "@boost//libs/iterator",
     ],
 )
 
@@ -21,13 +21,13 @@ cc_library(
     hdrs = glob(_public_hdrs),
     deps = [
         ":signals2_internal",
-        "@boost//optional",
-        "@boost//function",
-        "@boost//smart_ptr",
-        "@boost//variant",
-        "@boost//mpl",
-        "@boost//parameter",
-        "@boost//predef",
+        "@boost//libs/optional",
+        "@boost//libs/function",
+        "@boost//libs/smart_ptr",
+        "@boost//libs/variant",
+        "@boost//libs/mpl",
+        "@boost//libs/parameter",
+        "@boost//libs/predef",
     ],
 )
 

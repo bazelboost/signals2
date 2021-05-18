@@ -5,7 +5,7 @@ cc_test(
     srcs = ["connection_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
+        "@boost//libs/test",
     ],
 )
 
@@ -14,9 +14,9 @@ cc_test(
     srcs = ["dead_slot_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//bind",
-        "@boost//smart_ptr",
-        "@boost//test",
+        "@boost//libs/bind",
+        "@boost//libs/smart_ptr",
+        "@boost//libs/test",
     ],
 )
 
@@ -25,8 +25,8 @@ cc_test(
     srcs = ["deadlock_regression_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//smart_ptr",
-        "@boost//test",
+        "@boost//libs/smart_ptr",
+        "@boost//libs/test",
     ],
 )
 
@@ -35,8 +35,8 @@ cc_test(
     srcs = ["deconstruct_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
-        "@boost//smart_ptr",
+        "@boost//libs/test",
+        "@boost//libs/smart_ptr",
     ],
 )
 
@@ -45,7 +45,7 @@ cc_test(
     srcs = ["deletion_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
+        "@boost//libs/test",
     ],
 )
 
@@ -54,8 +54,8 @@ cc_test(
 #     srcs = ["invocation_benchmark.cpp"],
 #     deps = [
 #         "//:signals2",
-#         "@boost//bind",
-#         "@boost//thread",
+#         "@boost//libs/bind",
+#         "@boost//libs/thread",
 #     ],
 # )
 
@@ -64,9 +64,9 @@ cc_test(
 #     srcs = ["mutex_test.cpp"],
 #     deps = [
 #         "//:signals2",
-#         "@boost//test",
-#         "@boost//bind",
-#         "@boost//thread",
+#         "@boost//libs/test",
+#         "@boost//libs/bind",
+#         "@boost//libs/thread",
 #     ],
 # )
 
@@ -75,7 +75,7 @@ cc_test(
     srcs = ["ordering_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
+        "@boost//libs/test",
     ],
 )
 
@@ -84,7 +84,7 @@ cc_test(
     srcs = ["regression_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
+        "@boost//libs/test",
     ],
 )
 
@@ -93,8 +93,8 @@ cc_test(
     srcs = ["shared_connection_block_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//array",
-        "@boost//test",
+        "@boost//libs/array",
+        "@boost//libs/test",
     ],
 )
 
@@ -103,9 +103,9 @@ cc_test(
     srcs = ["signal_n_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//config",
-        "@boost//bind",
-        "@boost//test",
+        "@boost//libs/config",
+        "@boost//libs/bind",
+        "@boost//libs/test",
     ],
 )
 
@@ -114,9 +114,9 @@ cc_test(
     srcs = ["signal_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//bind",
-        "@boost//optional",
-        "@boost//test",
+        "@boost//libs/bind",
+        "@boost//libs/optional",
+        "@boost//libs/test",
     ],
 )
 
@@ -125,7 +125,7 @@ cc_test(
     srcs = ["signal_type_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
+        "@boost//libs/test",
     ],
 )
 
@@ -134,7 +134,7 @@ cc_test(
     srcs = ["slot_compile_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
+        "@boost//libs/test",
     ],
 )
 
@@ -143,8 +143,8 @@ cc_test(
     srcs = ["threading_models_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
-        "@boost//thread",
+        "@boost//libs/test",
+        "@boost//libs/thread",
     ],
 )
 
@@ -153,11 +153,11 @@ cc_test(
     srcs = ["track_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//core",
-        "@boost//smart_ptr",
-        "@boost//optional",
-        "@boost//test",
-        "@boost//bind",
+        "@boost//libs/core",
+        "@boost//libs/smart_ptr",
+        "@boost//libs/optional",
+        "@boost//libs/test",
+        "@boost//libs/bind",
     ],
 )
 
@@ -166,9 +166,9 @@ cc_test(
     srcs = ["trackable_test.cpp"],
     deps = [
         "//:signals2",
-        "@boost//test",
-        "@boost//bind",
-        "@boost//core",
-        "@boost//smart_ptr",
+        "@boost//libs/test",
+        "@boost//libs/bind",
+        "@boost//libs/core",
+        "@boost//libs/smart_ptr",
     ],
 )

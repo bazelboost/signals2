@@ -17,9 +17,9 @@ cc_binary(
     srcs = ["doc_view_acm_deconstruct.cpp"],
     deps = [
         "//:signals2",
-        "@boost//bind",
-        "@boost//core",
-        "@boost//smart_ptr",
+        "@boost//libs/bind",
+        "@boost//libs/core",
+        "@boost//libs/smart_ptr",
     ],
 )
 
@@ -28,9 +28,9 @@ cc_binary(
     srcs = ["doc_view_acm.cpp"],
     deps = [
         "//:signals2",
-        "@boost//bind",
-        "@boost//io",
-        "@boost//smart_ptr",
+        "@boost//libs/bind",
+        "@boost//libs/io",
+        "@boost//libs/smart_ptr",
     ],
 )
 
@@ -39,7 +39,7 @@ cc_binary(
     srcs = ["doc_view.cpp"],
     deps = [
         "//:signals2",
-        "@boost//bind",
+        "@boost//libs/bind",
     ],
 )
 
@@ -78,7 +78,7 @@ cc_binary(
     srcs = ["postconstructor_ex1.cpp"],
     deps = [
         "//:signals2",
-        "@boost//smart_ptr",
+        "@boost//libs/smart_ptr",
     ],
 )
 
@@ -87,7 +87,7 @@ cc_binary(
     srcs = ["postconstructor_ex2.cpp"],
     deps = [
         "//:signals2",
-        "@boost//smart_ptr",
+        "@boost//libs/smart_ptr",
     ],
 )
 
@@ -96,7 +96,7 @@ cc_binary(
     srcs = ["predestructor_example.cpp"],
     deps = [
         "//:signals2",
-        "@boost//smart_ptr",
+        "@boost//libs/smart_ptr",
     ],
 )
 
